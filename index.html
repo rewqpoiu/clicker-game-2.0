@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Clicker Game</title>
+    <meta charset="UTF-8">
+    <meta name="description" content="Free Web tutorials">
+    <meta name="keywords" content="HTML, CSS, JavaScript, Clicker Game, Browser Game, Song, Sound, Audio, Click, Game, Prank, Rickroll, Troll, Never Gonna Give You Up, Rick Astley, Browser, Disguise, Rickroll Link">
+    <meta name="author" content="rewqpoiu">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<body style="text-align:center">
+    <script>
+        function startGame() {
+            document.getElementById("title").style.display = "none";
+            document.getElementById("game").style.display = "block";
+            document.getElementById("audio").play();
+        }
+    </script>
+
+    <div id="title">
+    <p style="font-size:20px;"><i>*it's recommended to turn up the volume*</i></p>
+    <img onclick="startGame()" src="button.png" width="15%" height="15%">
+    <p style="font-size:40px">0 Clicks</p>
+    </div>
+    
+    <div id="game" hidden>
+        <img src="celebrate.gif" width="60%" height="60%">
+        
+        <p style="font-size:20px">Special thanks (ofcourse) to Rick Astley, the creator of "Never Gonna Give You Up"<br>also to a certain person who gave me this idea!</p>
+        <audio id="audio">
+            <source src="audio.mp3" type="audio/mpeg">
+        </audio>
+    </div>
+</body>
+</html>
