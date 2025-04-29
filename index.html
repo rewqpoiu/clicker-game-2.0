@@ -9,7 +9,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 </head>
 
-<body style="text-align:center;line-height:2;">
+<body style="text-align:center;line-height:2;padding-left:7%;padding-right:7%;">
     <script>
         function startGame() {
             document.getElementById("title").style.display = "none";
@@ -20,14 +20,14 @@
 
     <div id="title">
     <p style="font-size:20px;"><i>*it's recommended to turn up the volume*</i></p>
-    <img onclick="startGame()" src="button.png" width="40%" height="40%">
-    <p style="font-size:40px">0 Clicks</p>
+    <img onclick="startGame()" src="button.png" style="width:50%;height:50%;max-width:400px;">
+    <p style="font-size:40px;line-height:1;">0 Clicks</p>
     </div>
     
     <div id="game" hidden>
-        <img src="celebrate.gif" width="60%" height="60%">
+        <img src="celebrate.gif" style="width:70%;height:70%;max-width:800px;">
         
-        <p style="font-size:20px">Special thanks (ofcourse) to Rick Astley, the creator of "Never Gonna Give You Up"<br>also to blep12345 who made me have this idea! Share this to your friends and rickroll them! :P</p>
+        <center><p style="font-size:20px;max-width:800px;">Special thanks (ofcourse) to Rick Astley, the creator of "Never Gonna Give You Up" also to blep12345 who made me have this idea! Share this to your friends and rickroll them! :P</p></center>
         <audio id="audio">
             <source src="audio.mp3" type="audio/mpeg">
         </audio>
